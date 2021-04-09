@@ -358,7 +358,7 @@ update msg model =
         B1B2 ->
             case model.state of
                 B1  ->
-                    { model | state = B2 , a = 1, k = 3, c = 0, d = 0, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = B2 , a = 1, k = 3, c = 0, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         B2B3 ->
@@ -382,7 +382,7 @@ update msg model =
         B5B6 ->
             case model.state of
                 B5  ->
-                    { model | state = B6 , a = 1, k = 2, c = 0, d = 0, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = B6 , a = 1, k = 2, c = 0, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         B6M1 ->
@@ -400,7 +400,7 @@ update msg model =
         M2M3 ->
             case model.state of
                 M2  ->
-                    { model | state = M3 , a = 1, k = -1, c = 0, d = 2, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = M3 , a = 1, k = -1, c = 0, d = 2, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         M3M4 ->
@@ -430,7 +430,7 @@ update msg model =
         H1H2 ->
             case model.state of
                 H1  ->
-                    { model | state = H2 , a = 3, k = 2, c = -2, d = 1, a1 = 3, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = H2 , a = 3, k = 2, c = -2, d = 1, a1 = 3, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         H2H3 ->
@@ -442,7 +442,7 @@ update msg model =
         H3H4 ->
             case model.state of
                 H3  ->
-                    { model | state = H4 , a = 1, k = 3, c = -1, d = 1, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = H4 , a = 1, k = 3, c = -1, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         H4H5 ->
@@ -454,49 +454,49 @@ update msg model =
         H5H6 ->
             case model.state of
                 H5  ->
-                    { model | state = H6 , a = -2, k = 1, c = 5, d = -1, a1 = -2, k1 = 0, c1 = 0, d1 = 0, func = 1   }
+                    { model | state = H6 , a = -2, k = 1, c = 5, d = -1, a1 = -2, k1 = 1, c1 = 0, d1 = 0, func = 1   }
                 otherwise ->
                     model
         H6E1 ->
             case model.state of
                 H6  ->
-                    { model | state = E1 , a = 1, k = 1, c = 1, d = 1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E1 , a = 1, k = 1, c = 1, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E1E2 ->
             case model.state of
                 E1  ->
-                    { model | state = E2 , a = 3, k = 1, c = 2, d = -1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E2 , a = 3, k = 1, c = 2, d = -1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E2E3 ->
             case model.state of
                 E2  ->
-                    { model | state = E3 , a = 2, k = 2, c = 4, d = -2, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = E3 , a = 2, k = 2, c = 4, d = -2, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         E3E4 ->
             case model.state of
                 E3  ->
-                    { model | state = E4 , a = -2, k = 10, c = 3, d = 1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E4 , a = -2, k = 10, c = 3, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E4E5 ->
             case model.state of
                 E4  ->
-                    { model | state = E5 , a = 4, k = 4, c = -4, d = 0, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E5 , a = 4, k = 4, c = -4, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E5E6 ->
             case model.state of
                 E5  ->
-                    { model | state = E6 , a = 3, k = 12, c = 18, d = -1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = E6 , a = 3, k = 12, c = 18, d = -1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         M1B6 ->
             case model.state of
                 M1  ->
-                    { model | state = B6 , a = 1, k = 2, c = 0, d = 0, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = B6 , a = 1, k = 2, c = 0, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         B6B5 ->
@@ -520,7 +520,7 @@ update msg model =
         B3B2 ->
             case model.state of
                 B3  ->
-                    { model | state = B2 , a = 1, k = 3, c = 0, d = 0, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = B2 , a = 1, k = 3, c = 0, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         B2B1 ->
@@ -544,7 +544,7 @@ update msg model =
         M4M3 ->
             case model.state of
                 M4  ->
-                    { model | state = M3 , a = 1, k = -1, c = 0, d = 2, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = M3 , a = 1, k = -1, c = 0, d = 2, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         M5M4 ->
@@ -574,7 +574,7 @@ update msg model =
         H3H2 ->
             case model.state of
                 H3  ->
-                    { model | state = H2 , a = 3, k = 2, c = -2, d = 1, a1 = 3, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = H2 , a = 3, k = 2, c = -2, d = 1, a1 = 3, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         H4H3 ->
@@ -586,7 +586,7 @@ update msg model =
         H5H4 ->
             case model.state of
                 H5  ->
-                    { model | state = H4 , a = 1, k = 3, c = -1, d = 1, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = H4 , a = 1, k = 3, c = -1, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         H6H5 ->
@@ -598,37 +598,37 @@ update msg model =
         E1H6 ->
             case model.state of
                 E1  ->
-                    { model | state = H6 , a = -2, k = 1, c = 5, d = -1, a1 = -2, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = H6 , a = -2, k = 1, c = 5, d = -1, a1 = -2, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         E2E1 ->
             case model.state of
                 E2  ->
-                    { model | state = E1 , a = 1, k = 1, c = 1, d = 1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E1 , a = 1, k = 1, c = 1, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E3E2 ->
             case model.state of
                 E3  ->
-                    { model | state = E2 , a = 3, k = 1, c = 2, d = -1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E2 , a = 3, k = 1, c = 2, d = -1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E4E3 ->
             case model.state of
                 E4  ->
-                    { model | state = E3 , a = 2, k = 2, c = 4, d = -2, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = E3 , a = 2, k = 2, c = 4, d = -2, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         E5E4 ->
             case model.state of
                 E5  ->
-                    { model | state = E4 , a = -2, k = 10, c = 3, d = 1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E4 , a = -2, k = 10, c = 3, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         E6E5 ->
             case model.state of
                 E6  ->
-                    { model | state = E5 , a = 4, k = 4, c = -4, d = 0, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E5 , a = 4, k = 4, c = -4, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         SB1 ->
@@ -640,7 +640,7 @@ update msg model =
         SB2 ->
             case model.state of
                 StartPage  -> -- sin3x (set a1 = 1, c1 = 0 , d1 = 0) 
-                    { model | state = B2 , a = 1, k = 3, c = 0, d = 0, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 0 }
+                    { model | state = B2 , a = 1, k = 3, c = 0, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0 }
                 otherwise ->
                     model
         SB3 ->
@@ -664,7 +664,7 @@ update msg model =
         SB6 ->
             case model.state of
                 StartPage  -> -- cos(2x) (set a1 = 1, c1 = 0, d1 = 0)
-                    { model | state = B6 , a = 1, k = 2, c = 0, d = 0, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 1 }
+                    { model | state = B6 , a = 1, k = 2, c = 0, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1 }
                 otherwise ->
                     model
         SM1 ->
@@ -694,7 +694,7 @@ update msg model =
         SM3 ->
             case model.state of
                 StartPage  -> -- sin(-1)x + 2 (set a1 = 1, c1 = 0)
-                    { model | state = M3 , a = 1, k = -1, c = 0, d = 2, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 0 }
+                    { model | state = M3 , a = 1, k = -1, c = 0, d = 2, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0 }
                 otherwise ->
                     model
         SM2 ->
@@ -712,7 +712,7 @@ update msg model =
         SH2 ->
             case model.state of
                 StartPage  -> -- 3sin2(x-2) +1 (set a1 = 3) 
-                    { model | state = H2 , a = 3, k = 2, c = -2, d = 1, a1 = 3, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = H2 , a = 3, k = 2, c = -2, d = 1, a1 = 3, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         SH3 ->
@@ -724,7 +724,7 @@ update msg model =
         SH4 ->
             case model.state of
                 StartPage  -> -- cos3(x-1) + 1 (set a1 = 1) 
-                    { model | state = H4 , a = 1, k = 3, c = -1, d = 1, a1 = 1, k1 = 0, c1 = 0, d1 = 0, func = 1   }
+                    { model | state = H4 , a = 1, k = 3, c = -1, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1   }
                 otherwise ->
                     model
         SH5 ->
@@ -736,43 +736,43 @@ update msg model =
         SH6 ->
             case model.state of
                 StartPage  -> -- -2cos(x+5) - 1 (set a1 = -2) 
-                    { model | state = H6 , a = -2, k = 1, c = 5, d = -1, a1 = -2, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = H6 , a = -2, k = 1, c = 5, d = -1, a1 = -2, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         SE1 ->
             case model.state of
                 StartPage  -> -- sin(x+1) + 1
-                    { model | state = E1 , a = 1, k = 1, c = 1, d = 1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0 }
+                    { model | state = E1 , a = 1, k = 1, c = 1, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0 }
                 otherwise ->
                     model
         SE2 ->
             case model.state of
                 StartPage  -> -- 3sin(x+2) - 1
-                    { model | state = E2 , a = 3, k = 1, c = 2, d = -1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E2 , a = 3, k = 1, c = 2, d = -1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         SE3 ->
             case model.state of
                 StartPage  -> -- 2cos2(x+4) - 2
-                    { model | state = E3 , a = 2, k = 2, c = 4, d = -2, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 1  }
+                    { model | state = E3 , a = 2, k = 2, c = 4, d = -2, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1  }
                 otherwise ->
                     model
         SE4 ->
             case model.state of
                 StartPage  -> -- -2sin10(x+3) + 1
-                    { model | state = E4 , a = -2, k = 10, c = 3, d = 1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0  }
+                    { model | state = E4 , a = -2, k = 10, c = 3, d = 1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0  }
                 otherwise ->
                     model
         SE5 ->
             case model.state of
                 StartPage  -> -- 4sin(4(x+(-4))
-                    { model | state = E5 , a = 4, k = 4, c = -4, d = 0, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 0 }
+                    { model | state = E5 , a = 4, k = 4, c = -4, d = 0, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 0 }
                 otherwise ->
                     model
         SE6 ->
             case model.state of
                 StartPage  -> -- 3cos(12(x+18)) - 1
-                    { model | state = E6 , a = 3, k = 12, c = 18, d = -1, a1 = 0, k1 = 0, c1 = 0, d1 = 0, func = 1 }
+                    { model | state = E6 , a = 3, k = 12, c = 18, d = -1, a1 = 1, k1 = 1, c1 = 0, d1 = 0, func = 1 }
                 otherwise ->
                     model
         BackToStartPage -> {model | state = StartPage } 
